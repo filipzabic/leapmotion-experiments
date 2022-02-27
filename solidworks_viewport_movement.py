@@ -21,7 +21,7 @@ while True:
         roll = math.atan(frame.hands[0].palm_normal.x/frame.hands[0].palm_normal.y)
         pitch = math.atan(frame.hands[0].palm_normal.z/frame.hands[0].palm_normal.y)
 
-        x_pomak = 0.001 * roll
-        y_pomak = 0.001 * pitch
+        x_movement = 0.001 * roll
+        y_movement = 0.001 * pitch
 
-        model.TranslateBy(x_pomak, y_pomak)
+        model.TranslateBy(x_movement, y_movement)
